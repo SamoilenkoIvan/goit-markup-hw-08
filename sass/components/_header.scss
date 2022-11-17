@@ -1,0 +1,12 @@
+.header {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
