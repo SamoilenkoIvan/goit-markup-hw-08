@@ -5,6 +5,17 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-top: 20px;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 60px;
+      }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+      }    
+    
+
+
 }
 
 .address__link {

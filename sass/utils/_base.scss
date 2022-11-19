@@ -37,7 +37,7 @@ section {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -78,4 +78,8 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+    
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+      } 
 }
