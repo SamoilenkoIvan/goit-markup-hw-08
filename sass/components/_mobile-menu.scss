@@ -40,8 +40,18 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  fill: var(--title-text-color);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+
+    &:hover,
+    &:focus {
+  fill: var(--accent-color);
 }
+}
+
 
 .mobile-menu__nav {
   margin-bottom: 302px;
