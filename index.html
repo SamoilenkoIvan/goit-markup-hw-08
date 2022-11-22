@@ -27,9 +27,9 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-          <svg class="" width="40" height="40">
-            <use href="./images/icons.svg#icon-mobilemenuopen"></use></svg
-        >
+            <svg class="" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobilemenuopen"></use>
+            </svg>
           </button>
           <nav class="header-nav">
             <a lang="en" href="./index.html" class="logo"
@@ -144,7 +144,12 @@
             <ul class="tasks__list list">
               <li class="tasks__item">
                 <img
-                  src="./images/main11.jpg"
+                  srcset="
+                  ./images/main11desktop.jpg    1200w,
+                  ./images/main11desktop@2x.jpg 2400w
+                "
+                src="./images/main11desktop.jpg"
+                sizes="(min-width: 1200px) 33w"
                   alt="Людина працює за комп'ютером"
                   class="photo"
                 />
@@ -154,7 +159,12 @@
               </li>
               <li class="tasks__item">
                 <img
-                  src="./images/main12.jpg"
+                  srcset="
+                  ./images/main12desktop.jpg    1200w,
+                  ./images/main12desktop@2x.jpg 2400w
+                "
+                src="./images/main12desktop.jpg"
+                sizes="(min-width: 1200px) 33w"
                   alt="Людина працює за ноутбуком"
                   class="photo"
                 />
@@ -164,7 +174,12 @@
               </li>
               <li class="tasks__item">
                 <img
-                  src="./images/main13.jpg"
+                  srcset="
+                  ./images/main13desktop.jpg    1200w,
+                  ./images/main13desktop@2x.jpg 2400w
+                "
+                src="./images/main13desktop.jpg"
+                sizes="(min-width: 1200px) 33w"
                   alt="Людина працює за планшетом"
                   class="photo"
                 />
@@ -182,8 +197,17 @@
           <ul class="our-team__list list">
             <li class="our-team__item">
               <img
-                src="./images/main21.jpg"
+                srcset="
+                  ./images/main21phone.jpg       480w,
+                  ./images/main21phone@2x.jpg    960w,
+                  ./images/main21tablet.jpg      768w,
+                  ./images/main21tablet@2x.jpg  1536w,
+                  ./images/main21desktop.jpg    1200w,
+                  ./images/main21desktop@2x.jpg 2400w
+                "
+                src="./images/main21phone.jpg"
                 alt="Усміхнений хлопець в окулярах"
+                sizes="(min-width: 1200px) 25w, (min-width: 768px) 50w, 100w"
                 class="photo"
               />
               <div class="our-team__block">
@@ -227,7 +251,16 @@
             </li>
             <li class="our-team__item">
               <img
-                src="./images/main22.jpg"
+                srcset="
+                  ./images/main22phone.jpg       480w,
+                  ./images/main22phone@2x.jpg    960w,
+                  ./images/main22tablet.jpg      768w,
+                  ./images/main22tablet@2x.jpg  1536w,
+                  ./images/main22desktop.jpg    1200w,
+                  ./images/main22desktop@2x.jpg 2400w
+                "
+                src="./images/main22phone.jpg"
+                sizes="(min-width: 1200px) 25w, (min-width: 768px) 50w, 100w"
                 alt="Усміхнена дівчина в окулярах"
                 class="photo"
               />
@@ -272,7 +305,16 @@
             </li>
             <li class="our-team__item">
               <img
-                src="./images/main23.jpg"
+                srcset="
+                  ./images/main23phone.jpg       480w,
+                  ./images/main23phone@2x.jpg    960w,
+                  ./images/main23tablet.jpg      768w,
+                  ./images/main23tablet@2x.jpg  1536w,
+                  ./images/main23desktop.jpg    1200w,
+                  ./images/main23desktop@2x.jpg 2400w
+                "
+                src="./images/main23phone.jpg"
+                sizes="(min-width: 1200px) 25w, (min-width: 768px) 50w, 100w"
                 alt="Усміхнений хлопець"
                 class="photo"
               />
@@ -317,7 +359,16 @@
             </li>
             <li class="our-team__item">
               <img
-                src="./images/main24.jpg"
+                srcset="
+                  ./images/main24phone.jpg       480w,
+                  ./images/main24phone@2x.jpg    960w,
+                  ./images/main24tablet.jpg      768w,
+                  ./images/main24tablet@2x.jpg  1536w,
+                  ./images/main24desktop.jpg    1200w,
+                  ./images/main24desktop@2x.jpg 2400w
+                "
+                src="./images/main24phone.jpg"
+                sizes="(min-width: 1200px) 25w, (min-width: 768px) 50w, 100w"
                 alt="Хлопець в окулярах"
                 class="photo"
               />
@@ -583,13 +634,15 @@
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="mobile-menu__close js-close-menu">
         <svg class="" width="40" height="40">
-          <use href="./images/icons.svg#icon-mobilemenuclose"></use></svg
-      >
+          <use href="./images/icons.svg#icon-mobilemenuclose"></use>
+        </svg>
       </button>
 
       <ul class="mobile-menu__nav list">
         <li class="mobile-menu__nav-item">
-          <a href="./index.html" class="mobile-menu__nav-link--current">Студія</a>
+          <a href="./index.html" class="mobile-menu__nav-link--current"
+            >Студія</a
+          >
         </li>
         <li class="mobile-menu__nav-item">
           <a href="./portfolio.html" class="mobile-menu__nav-link">Портфоліо</a>

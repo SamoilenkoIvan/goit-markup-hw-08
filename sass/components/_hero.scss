@@ -1,61 +1,142 @@
 .hero {
-    max-width: 1600px;
-    padding: 200px 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url('../images/heroimage.jpg');
+  max-width: 1600px;
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/herophone.jpg');
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--primary-white-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-white-color);
+  @media screen and (min-width: 768px) {
+    height: 600px;
+  }
+}
+// .hero {
+//   max-width: 1600px;
+//   height: 400px;
+//   margin: 0 auto;
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url('../images/hero-mobile-1x.jpg');
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   @media screen and (min-width: $desktop) {
+//     height: 600px;
+//   }
+// }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/herophone@2x.jpg');
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/herotablet.jpg');
+  }
+}
+
+@media screen and (min-width: 768) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/herotablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/herodesktop.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/herodesktop@2x.jpg');
+  }
+}
 
 .hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    max-width: 696px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 696px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
-
 
 .hero__button {
-    cursor: pointer;
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    background: var(--accent-color);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: var(--button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    letter-spacing: 0.06em;
-    color: var(--primary-white-color);
-    margin: 0 auto;
-    text-align: center;
-    border: none;
-    transition-property: background;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background: var(--button-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-    }
+  }
 }
-
