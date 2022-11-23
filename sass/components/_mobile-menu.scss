@@ -4,6 +4,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
   padding: 32px;
   background-color: var(--primary-white-color);
   z-index: 999;
@@ -92,6 +96,12 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 32px;
+
+@media screen and (max-width: 360px){
+    font-size: 26px;
+    line-height: 1.17;
+}
+
 }
 
 .mobile-menu__mail {
@@ -113,6 +123,13 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (max-width: 390px){
+    font-size: 13px;
+    line-height: 1.22;
+
+}
+
 }
 
 .mobile-menu__social-item {
