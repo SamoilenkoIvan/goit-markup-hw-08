@@ -4,23 +4,22 @@
 }
 
 .our-team__list {
-
+    gap: 30px;
     @media screen and (max-width: 767px) {
         display: block;
-    
-        .our-team__item:not(:last-child) {
-            margin-bottom: 30px;
-            }
+        // .our-team__item:not(:last-child) {
+        //     margin-bottom: 30px;
+        //     }
       }
     
     
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     
         .our-team__item {
           width: calc((100% - 4 * 15px) / 2);
-          margin: 15px;
 
         }
       }
@@ -28,7 +27,6 @@
       @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: space-between;
-        // gap: 30px;
         flex-wrap: nowrap;
         .our-team__item {
             flex-basis: calc((100% - 90px) / 4);

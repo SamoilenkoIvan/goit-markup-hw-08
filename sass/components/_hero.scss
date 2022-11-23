@@ -1,4 +1,9 @@
 .hero {
+
+  @media screen and (min-width: 480px) and (max-width: 1199px){
+    padding: 118px 0;
+}
+
   max-width: 1600px;
   padding: 200px 0;
   margin-left: auto;
@@ -18,23 +23,7 @@
     height: 600px;
   }
 }
-// .hero {
-//   max-width: 1600px;
-//   height: 400px;
-//   margin: 0 auto;
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url('../images/hero-mobile-1x.jpg');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   @media screen and (min-width: $desktop) {
-//     height: 600px;
-//   }
-// }
+
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -108,6 +97,12 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px){
+    font-size: 26px;
+    line-height: 1.61;
+}
+
 }
 
 .hero__button {
