@@ -5,6 +5,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+    margin: 0 auto;
 
     @media screen and (max-width: 479px) {
         width: 100%;
@@ -111,6 +112,11 @@
     color: var(--primary-text-color);
     gap: 8px;
     cursor: pointer;
+
+    @media screen and (max-width: 480px){
+        font-size: 8px;
+        line-height: 1.17;
+    }
     
     @media screen and (min-width: 480px) and (max-width: 1199px){
         font-size: 12px;
