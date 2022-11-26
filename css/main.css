@@ -61,13 +61,13 @@ ul {
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -101,11 +101,12 @@ a {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
   }
