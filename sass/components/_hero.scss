@@ -1,13 +1,12 @@
 .hero {
-
-  @media screen and (min-width: 480px) and (max-width: 1199px){
-    padding: 118px 0;
-}
-
-  max-width: 1600px;
-  padding: 200px 0;
+  padding: 118px 0;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-white-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -15,31 +14,23 @@
     ),
     url('../images/herophone.jpg');
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: var(--primary-white-color);
-  @media screen and (min-width: 768px) {
-    height: 600px;
-  }
-}
-
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/herophone@2x.jpg');
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/herophone@2x.jpg');
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -64,6 +55,8 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
+    padding: 200px 0;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -87,23 +80,22 @@
 }
 
 .hero__title {
+  font-size: 26px;
+  line-height: 1.61;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px){
-    font-size: 26px;
-    line-height: 1.61;
-    max-width: 360px;
-}
-
+  @media screen and (min-width: 480px) and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__button {
